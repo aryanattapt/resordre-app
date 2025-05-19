@@ -12,12 +12,12 @@ const MenuOrder = () => {
       <div className="h-8 flex items-center px-1 bg-red-500/20">
         (Nama Resto)
       </div>
-      <div className="h-10 flex items-center sticky bg-yellow-300/20">
+      <div className="h-10 flex items-center sticky top-0 z-50 shadow-md p-2 bg-white">
         <ul className="flex flex-row gap-4 overflow-x-auto hide-scrollbar px-1" >
           {
             listKategoriMenu.map((item, index) => (
               <li key={index}>
-                {item}
+                <a >{item}</a>
               </li>
             ))
           }
