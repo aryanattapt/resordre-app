@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+    reactStrictMode: true,
+    serverRuntimeConfig: {
+        trustProxy: true,
+    },
 };
 
 export default nextConfig;
